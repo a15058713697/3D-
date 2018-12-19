@@ -1,0 +1,35 @@
+html{height: 100%;}
+body{
+	background:#023b3b url("../img/bg.png") no-repeat center;
+	height: 100%;
+	perspective: 800px;
+	overflow: hidden;
+}
+img{
+	height: 160px;
+	width: 120px;
+
+}
+#main{
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform-style:preserve-3d;
+	transform: translateZ(-2000px) rotateX(0deg) rotateY(0deg);
+
+}
+#main li{
+	height: 160px;
+	width: 120px;
+	background-color: rgba(0,127,127,0.5);
+	border:1px solid rgba(127,255,255,0.25);
+	box-shadow: 0 0 12px rgba(0,255,255,0.5);
+	cursor: pointer;
+	position: absolute;
+	left: -60px;
+	top: -80px;
+	overflow: hidden;
+}
+ul{list-style-type: none;}
